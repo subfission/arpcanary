@@ -4,8 +4,6 @@ ARP Spoof Detect
 ARPCanary monitors for ARP protocol spoofing attacks.  These are typically precursers to a man-in-the-middle attack.
 
 
-
-
 The script is easy to set up and safe to run in background. Once an ARP spoof attack is detected, a system notification will be sent to the user, and corresponding information will be logged in the log file.
 
 
