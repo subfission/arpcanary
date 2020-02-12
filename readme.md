@@ -1,4 +1,4 @@
-ARP Spoof Detect
+ARP Canary
 =========
 
 ARPCanary monitors for ARP protocol spoofing attacks.  These are typically precursers to a man-in-the-middle attack.
