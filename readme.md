@@ -38,14 +38,10 @@ $ sudo ./arpcanary -i INTERFACE
 Root privilege is required to operate network interfaces.
 
 
-Choose the network interface on which you would like to detect ARP spoofing. For most cases, this should be the default network interface you use to access Internet. A list of available interfaces on your machine is offered for your convenience.
+Example
+```
+$ sudo ./arpcanary --log spoof.log -i en0
 
-```
-Please select the interface you wish to use. ['lo0', 'gif0', 'stf0', 'en0', 'en1', 'en2', 'bridge0', 'p2p0', 'vnic0', 'vnic1']
-```
-
-Once proper interfaces is selected, and no other error occurs, you will see
-```
 ARP Spoofing Detection Started. Any output is redirected to log file.
 ```
 
@@ -53,3 +49,13 @@ If you are running Mac OS X, when an ARP spoofing attack is in the network, you 
 
 [Scapy]:http://www.secdev.org/projects/scapy/
 [Netifaces]:https://pypi.python.org/pypi/netifaces
+
+Virtual Env Setup Example
+----
+
+From inside the arpcanary directory, run:
+``` 
+virtualenv -p /usr/local/bin/python3 .env
+source .env/bin/activate
+pip install -r requirements.txt
+```
